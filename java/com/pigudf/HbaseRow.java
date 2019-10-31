@@ -13,8 +13,8 @@ import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.security.UserGroupInformation;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.pig.EvalFunc;
-import org.apache.pig.data.Tuple;
+//import org.apache.pig.EvalFunc;
+//import org.apache.pig.data.Tuple;
 
 /**
  * This UDF can be called from Pig Script as follows: a = load 'input' using
@@ -26,13 +26,9 @@ public class HbaseRow {
 	private static Table getHTable(final String tgtTableName) throws IOException, InterruptedException {
 	
 		Table tgtTable=null;
-		System.out.println("before get connnection:");
 		Connection connection = getConnection();
-		System.out.println("connnection:");
 		TableName tableName = TableName.valueOf(tgtTableName);
-		System.out.println("tablename:");
 		tgtTable = connection.getTable(tableName);
-		System.out.println("tgttable:");
 
 		return tgtTable;
 	}
@@ -41,33 +37,28 @@ public class HbaseRow {
 		
 		Configuration configuration = HBaseConfiguration.create();
 		
-		System.out.println("before zookeeper");
-		configuration.set("hbase.zookeeper.quorum", "ip-172-31-21-148.ap-southeast-2.compute.internal");
-		System.out.println("after quo");
-		configuration.set("hbase.zookeeper.property.clientPort", "2181");
-		System.out.println("after client");
-		configuration.set("hbase.master", "172.31.21.148:16000");
+		//configuration.set("hbase.zookeeper.quorum", "ip-172-31-21-148.ap-southeast-2.compute.internal");
+		//configuration.set("hbase.zookeeper.property.clientPort", "2181");
 		//configuration.addResource("/etc/hbase/conf/hbase-site.xml");
-		System.out.println("after hbase-site");
 
+        	configuration.set("hbase.security.authentication", "kerberos");
+        	configuration.set("hbase.rpc.protection ", "privacy");
+        	configuration.set("hbase.master.kerberos.principal", "hbase/_HOST@test.com");
+        	configuration.set("hbase.regionserver.kerberos.principal", "hbase/_HOST@test.com");
 		//Connection connection = ConnectionFactory.createConnection(HBaseConfiguration.create(configuration));
 		Connection connection = ConnectionFactory.createConnection(configuration);
 		return connection;
 	}
+//usage: com.pigudf.HbaseRow '1990' 'test' 'cf' 'status'
 	public static void main(String[] args)  throws IOException 
     	{
 
 		try{
 			final String rowKey = (String) args[0];
-			System.out.println("rowkey:"+rowKey);
 			final String tgtTableName = (String) args[1];
-			System.out.println(tgtTableName);
 			final String columnFamilyName = (String) args[2];
-			System.out.println(columnFamilyName);
 			final String columnName = (String) args[3];
-			System.out.println(columnName);
 			final Table table = getHTable(tgtTableName);
-			System.out.println("table:"+table);
 			final Get get = new Get(Bytes.toBytes(rowKey.trim()));
 			get.addColumn(Bytes.toBytes(columnFamilyName), Bytes.toBytes(columnName));
 			final Result result = table.get(get);
