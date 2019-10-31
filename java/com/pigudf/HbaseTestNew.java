@@ -14,16 +14,19 @@ public class HbaseTestNew
     public static void main(String[] args) throws IOException
     {
         HBaseConfiguration hc = new HBaseConfiguration(new Configuration());
+    //    hc.set("hadoop.security.authentication", "kerberos");
+    //    hc.set("hadoop.rpc.protection ", "privacy");
+    //    below is the minimum setting for hbase client with kerberos. Meanwhile, the java need to run with user who has kerberos key
         hc.set("hbase.security.authentication", "kerberos");
-        hc.set("hadoop.security.authentication", "kerberos");
-        //hc.set("hadoop.rpc.protection ", "privacy");
+        hc.set("hbase.rpc.protection ", "privacy");
+        hc.set("hbase.master.kerberos.principal", "hbase/_HOST@test.com");
+        hc.set("hbase.regionserver.kerberos.principal", "hbase/_HOST@test.com");
         //hc.set("hbase.cluster.distributed", "true");
 
         // for  kerberos setting
-        hc.set("hbase.master.kerberos.principal", "hbase/_HOST@test.com");
-        hc.set("hbase.master.keytab.file", "/etc/hbase.keytab");
-        hc.set("hbase.regionserver.kerberos.principal", "hbase/_HOST@test.com");
-        hc.set("hbase.regionserver.keytab.file", "/etc/hbase.keytab");
+// keytable is not ncessary for the clinet
+ //       hc.set("hbase.master.keytab.file", "/etc/hbase.keytab");
+   //     hc.set("hbase.regionserver.keytab.file", "/etc/hbase.keytab");
         //System.setProperty("java.security.krb5.conf","/etc/krb5.conf");
         //System.setProperty("sun.security.krb5.debug","false");
 
