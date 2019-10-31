@@ -33,6 +33,7 @@ public class GetHbaseRow extends EvalFunc<String> {
 
 	@Override
 	public String exec(final Tuple input) throws IOException {
+		UserGroupInformation.loginUserFromKeytab("hbase/ip-172-31-23-0.ap-southeast-2.compute.internal@test.com", "/etc/hbase.keytab");
 		if (input == null || input.size() == 0 || (String) input.get(0) == null) {
 			return DEFAULT_VALUE;
 		}
@@ -41,8 +42,6 @@ public class GetHbaseRow extends EvalFunc<String> {
 			final String tgtTableName = (String) input.get(1);
 			final String columnFamilyName = (String) input.get(2);
 			final String columnName = (String) input.get(3);
-			//final String zkq = (String) input.get(4);
-			//final Table table = getHTable(tgtTableName, zkq);
 			final Table table = getHTable(tgtTableName);
 			final Get get = new Get(Bytes.toBytes(rowKey.trim()));
 			get.addColumn(Bytes.toBytes(columnFamilyName), Bytes.toBytes(columnName));
@@ -95,23 +94,24 @@ public class GetHbaseRow extends EvalFunc<String> {
 		Configuration configuration = HBaseConfiguration.create();
 		
 		// Zookeeper quorum
-		configuration.set("hbase.zookeeper.quorum", "ip-172-31-17-88.ap-southeast-2.compute.internal");
-		configuration.set("hbase.zookeeper.property.clientPort", "2181");
-                configuration.set("hbase.master", "172.31.17.88:16000");
 
 		configuration.set("hadoop.security.authentication", "kerberos");
+		configuration.set("hadoop.rpc.protection ", "privacy");
 		configuration.set("hbase.security.authentication", "kerberos");
 		configuration.set("hbase.regionserver.kerberos.principal", "hbase/_HOST@test.com"); 
 		configuration.set("hbase.regionserver.keytab.file", "/etc/hbase.keytab"); 
 		configuration.set("hbase.master.kerberos.principal", "hbase/_HOST@test.com");
 		configuration.set("hbase.master.keytab.file", "/etc/hbase.keytab");
+		configuration.set("hbase.rpc.protection ", "privacy");
 
-		//System.setProperty("java.security.krb5.conf","/etc/krb5.conf");
-        	//System.setProperty("sun.security.krb5.debug","false");
+		configuration.set("hbase.zookeeper.quorum", "ip-172-31-28-186.ap-southeast-2.compute.internal");
+		configuration.set("hbase.zookeeper.property.clientPort", "2181");
+//                configuration.set("hbase.master", "172.31.17.88:16000");
 
-		//test without below 2 commands 
-		//UserGroupInformation.setConfiguration(configuration);
-		//UserGroupInformation.loginUserFromKeytab("hbase/ip-172-31-17-88.ap-southeast-2.compute.internal@test.com", "/etc/hbase.keytab");
+		System.setProperty("java.security.krb5.conf","/etc/krb5.conf");
+        	System.setProperty("sun.security.krb5.debug","true");
+		UserGroupInformation.setConfiguration(configuration);
+		UserGroupInformation.loginUserFromKeytab("hbase/ip-172-31-23-0.ap-southeast-2.compute.internal@test.com", "/etc/hbase.keytab");
 
 		Connection connection = ConnectionFactory.createConnection(configuration);
 		return connection;
