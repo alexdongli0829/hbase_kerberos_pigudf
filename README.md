@@ -12,7 +12,7 @@ one pig very simple udf test -> GetClassification.java
 
 and pig hbase udf test -> GetHbaseRow.java
 
-#javac -cp /usr/lib/hbase/hbase-client-1.4.9.jar:/usr/lib/hadoop/hadoop-common-2.8.5-amzn-3.jar:/usr/lib/hbase/hbase-common-1.4.9.jar:/usr/lib/pig/pig-0.17.0-core-h2.jar:/usr/lib/hadoop/client/log4j-1.2.17.jar:/usr/lib/hadoop/client/commons-logging-1.1.3.jar com/pigudf/GetHbaseRow.java
+
 javac -cp .:/usr/lib/hbase/*:/usr/lib/hbase/lib/*:$(hadoop classpath):/usr/lib/pig/pig-0.17.0-core-h2.jar com/pigudf/GetHbaseRow.java
 
 jar cf gethbaserow.jar com/pigudf/GetHbaseRow.class
