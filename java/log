@@ -1,81 +1,81 @@
-19/11/05 05:39:49 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
-19/11/05 05:39:49 INFO pig.ExecTypeProvider: Picked LOCAL as the ExecType
-19/11/05 05:39:49 INFO pig.Main: Loaded log4j properties from file: /etc/pig/conf/log4j.properties
-33   [main] INFO  org.apache.pig.Main  - Apache Pig version 0.17.0 (r: unknown) compiled Jul 01 2019, 22:56:40
-19/11/05 05:39:49 INFO pig.Main: Apache Pig version 0.17.0 (r: unknown) compiled Jul 01 2019, 22:56:40
-34   [main] INFO  org.apache.pig.Main  - Logging error messages to: /mnt/var/log/pig/pig_1572932389947.log
-19/11/05 05:39:49 INFO pig.Main: Logging error messages to: /mnt/var/log/pig/pig_1572932389947.log
-19/11/05 05:39:49 INFO Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
-273  [main] INFO  org.apache.pig.impl.util.Utils  - Default bootup file /var/lib/hbase/.pigbootup not found
-19/11/05 05:39:50 INFO util.Utils: Default bootup file /var/lib/hbase/.pigbootup not found
-19/11/05 05:39:50 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
-375  [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine  - Connecting to hadoop file system at: file:///
-19/11/05 05:39:50 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
-549  [main] INFO  org.apache.pig.PigServer  - Pig Script ID for the session: PIG-test.pig-ac597215-3160-4739-a34c-152e9acd2282
-19/11/05 05:39:50 INFO pig.PigServer: Pig Script ID for the session: PIG-test.pig-ac597215-3160-4739-a34c-152e9acd2282
-549  [main] WARN  org.apache.pig.PigServer  - ATS is disabled since yarn.timeline-service.enabled set to false
-19/11/05 05:39:50 WARN pig.PigServer: ATS is disabled since yarn.timeline-service.enabled set to false
-1117 [main] INFO  org.apache.pig.tools.pigstats.ScriptState  - Pig features used in the script: UNKNOWN
-19/11/05 05:39:51 INFO pigstats.ScriptState: Pig features used in the script: UNKNOWN
-1205 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer  - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NestedLimitOptimizer, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
-19/11/05 05:39:51 INFO optimizer.LogicalPlanOptimizer: {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NestedLimitOptimizer, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
-1227 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor  - Columns pruned for records: $1
-19/11/05 05:39:51 INFO rules.ColumnPruneVisitor: Columns pruned for records: $1
-1320 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager  - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
-19/11/05 05:39:51 INFO util.SpillableMemoryManager: Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
-1370 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler  - File concatenation threshold: 100 optimistic? false
-19/11/05 05:39:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
-1388 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer  - MR plan size before optimization: 1
-19/11/05 05:39:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
-1388 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer  - MR plan size after optimization: 1
-19/11/05 05:39:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
-19/11/05 05:39:51 INFO Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
-19/11/05 05:39:51 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
-1439 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState  - Pig script settings are added to the job
-19/11/05 05:39:51 INFO mapreduce.MRScriptState: Pig script settings are added to the job
-19/11/05 05:39:51 INFO Configuration.deprecation: mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
-1443 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
-19/11/05 05:39:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
-19/11/05 05:39:51 INFO Configuration.deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
-1454 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Setting up single store job
-19/11/05 05:39:51 INFO mapReduceLayer.JobControlCompiler: Setting up single store job
-1462 [main] INFO  org.apache.pig.data.SchemaTupleFrontend  - Key [pig.schematuple] is false, will not generate code.
-19/11/05 05:39:51 INFO data.SchemaTupleFrontend: Key [pig.schematuple] is false, will not generate code.
-1462 [main] INFO  org.apache.pig.data.SchemaTupleFrontend  - Starting process to move generated code to distributed cacche
-19/11/05 05:39:51 INFO data.SchemaTupleFrontend: Starting process to move generated code to distributed cacche
-1462 [main] INFO  org.apache.pig.data.SchemaTupleFrontend  - Distributed cache not supported or needed in local mode. Setting key [pig.schematuple.local.dir] with code temp directory: /tmp/1572932391376-0
-19/11/05 05:39:51 INFO data.SchemaTupleFrontend: Distributed cache not supported or needed in local mode. Setting key [pig.schematuple.local.dir] with code temp directory: /tmp/1572932391376-0
-1495 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 1 map-reduce job(s) waiting for submission.
-19/11/05 05:39:51 INFO mapReduceLayer.MapReduceLauncher: 1 map-reduce job(s) waiting for submission.
-19/11/05 05:39:51 INFO Configuration.deprecation: mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
-19/11/05 05:39:51 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
-19/11/05 05:39:51 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
-19/11/05 05:39:51 WARN mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
-1559 [JobControl] INFO  org.apache.pig.builtin.PigStorage  - Using PigTextInputFormat
-19/11/05 05:39:51 INFO builtin.PigStorage: Using PigTextInputFormat
-19/11/05 05:39:51 INFO input.FileInputFormat: Total input files to process : 1
-1562 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil  - Total input paths to process : 1
-19/11/05 05:39:51 INFO util.MapRedUtil: Total input paths to process : 1
-1572 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil  - Total input paths (combined) to process : 1
-19/11/05 05:39:51 INFO util.MapRedUtil: Total input paths (combined) to process : 1
-19/11/05 05:39:51 INFO mapreduce.JobSubmitter: number of splits:1
-19/11/05 05:39:51 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1883011412_0001
-19/11/05 05:39:51 WARN conf.Configuration: file:/tmp/hadoop-hbase/mapred/staging/hbase1883011412/.staging/job_local1883011412_0001/job.xml:an attempt to override final parameter: yarn.nodemanager.local-dirs;  Ignoring.
-19/11/05 05:39:51 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
-19/11/05 05:39:51 INFO mapred.LocalJobRunner: OutputCommitter set in config null
-19/11/05 05:39:51 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
-19/11/05 05:39:51 INFO Configuration.deprecation: mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
-19/11/05 05:39:51 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
-19/11/05 05:39:51 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
-19/11/05 05:39:51 INFO output.DirectFileOutputCommitter: Direct Write: DISABLED
-19/11/05 05:39:51 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigOutputCommitter
-19/11/05 05:39:51 INFO mapred.LocalJobRunner: Waiting for map tasks
-19/11/05 05:39:51 INFO mapred.LocalJobRunner: Starting task: attempt_local1883011412_0001_m_000000_0
-19/11/05 05:39:51 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
-19/11/05 05:39:51 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
-19/11/05 05:39:51 INFO output.DirectFileOutputCommitter: Direct Write: DISABLED
-19/11/05 05:39:51 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
-19/11/05 05:39:51 INFO mapred.MapTask: Processing split: Number of splits :1
+19/11/05 23:19:50 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+19/11/05 23:19:50 INFO pig.ExecTypeProvider: Picked LOCAL as the ExecType
+19/11/05 23:19:50 INFO pig.Main: Loaded log4j properties from file: /etc/pig/conf/log4j.properties
+37   [main] INFO  org.apache.pig.Main  - Apache Pig version 0.17.0 (r: unknown) compiled Jul 01 2019, 22:56:40
+19/11/05 23:19:50 INFO pig.Main: Apache Pig version 0.17.0 (r: unknown) compiled Jul 01 2019, 22:56:40
+38   [main] INFO  org.apache.pig.Main  - Logging error messages to: /mnt/var/log/pig/pig_1572995990636.log
+19/11/05 23:19:50 INFO pig.Main: Logging error messages to: /mnt/var/log/pig/pig_1572995990636.log
+19/11/05 23:19:50 INFO Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
+281  [main] INFO  org.apache.pig.impl.util.Utils  - Default bootup file /home/hadoop/.pigbootup not found
+19/11/05 23:19:50 INFO util.Utils: Default bootup file /home/hadoop/.pigbootup not found
+19/11/05 23:19:50 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+385  [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine  - Connecting to hadoop file system at: file:///
+19/11/05 23:19:50 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+529  [main] INFO  org.apache.pig.PigServer  - Pig Script ID for the session: PIG-test.pig-3d8a3227-0c76-49e1-a9c9-7e14cfd1166f
+19/11/05 23:19:51 INFO pig.PigServer: Pig Script ID for the session: PIG-test.pig-3d8a3227-0c76-49e1-a9c9-7e14cfd1166f
+529  [main] WARN  org.apache.pig.PigServer  - ATS is disabled since yarn.timeline-service.enabled set to false
+19/11/05 23:19:51 WARN pig.PigServer: ATS is disabled since yarn.timeline-service.enabled set to false
+1217 [main] INFO  org.apache.pig.tools.pigstats.ScriptState  - Pig features used in the script: UNKNOWN
+19/11/05 23:19:51 INFO pigstats.ScriptState: Pig features used in the script: UNKNOWN
+1308 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer  - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NestedLimitOptimizer, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+19/11/05 23:19:51 INFO optimizer.LogicalPlanOptimizer: {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NestedLimitOptimizer, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+1327 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor  - Columns pruned for records: $1
+19/11/05 23:19:51 INFO rules.ColumnPruneVisitor: Columns pruned for records: $1
+1407 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager  - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+19/11/05 23:19:52 INFO util.SpillableMemoryManager: Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+1452 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler  - File concatenation threshold: 100 optimistic? false
+19/11/05 23:19:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+1469 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer  - MR plan size before optimization: 1
+19/11/05 23:19:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+1469 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer  - MR plan size after optimization: 1
+19/11/05 23:19:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+19/11/05 23:19:52 INFO Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+19/11/05 23:19:52 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+1518 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState  - Pig script settings are added to the job
+19/11/05 23:19:52 INFO mapreduce.MRScriptState: Pig script settings are added to the job
+19/11/05 23:19:52 INFO Configuration.deprecation: mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+1522 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+19/11/05 23:19:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+19/11/05 23:19:52 INFO Configuration.deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+1533 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Setting up single store job
+19/11/05 23:19:52 INFO mapReduceLayer.JobControlCompiler: Setting up single store job
+1540 [main] INFO  org.apache.pig.data.SchemaTupleFrontend  - Key [pig.schematuple] is false, will not generate code.
+19/11/05 23:19:52 INFO data.SchemaTupleFrontend: Key [pig.schematuple] is false, will not generate code.
+1540 [main] INFO  org.apache.pig.data.SchemaTupleFrontend  - Starting process to move generated code to distributed cacche
+19/11/05 23:19:52 INFO data.SchemaTupleFrontend: Starting process to move generated code to distributed cacche
+1540 [main] INFO  org.apache.pig.data.SchemaTupleFrontend  - Distributed cache not supported or needed in local mode. Setting key [pig.schematuple.local.dir] with code temp directory: /tmp/1572995992140-0
+19/11/05 23:19:52 INFO data.SchemaTupleFrontend: Distributed cache not supported or needed in local mode. Setting key [pig.schematuple.local.dir] with code temp directory: /tmp/1572995992140-0
+1574 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 1 map-reduce job(s) waiting for submission.
+19/11/05 23:19:52 INFO mapReduceLayer.MapReduceLauncher: 1 map-reduce job(s) waiting for submission.
+19/11/05 23:19:52 INFO Configuration.deprecation: mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
+19/11/05 23:19:52 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+19/11/05 23:19:52 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+19/11/05 23:19:52 WARN mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+1637 [JobControl] INFO  org.apache.pig.builtin.PigStorage  - Using PigTextInputFormat
+19/11/05 23:19:52 INFO builtin.PigStorage: Using PigTextInputFormat
+19/11/05 23:19:52 INFO input.FileInputFormat: Total input files to process : 1
+1640 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil  - Total input paths to process : 1
+19/11/05 23:19:52 INFO util.MapRedUtil: Total input paths to process : 1
+1651 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil  - Total input paths (combined) to process : 1
+19/11/05 23:19:52 INFO util.MapRedUtil: Total input paths (combined) to process : 1
+19/11/05 23:19:52 INFO mapreduce.JobSubmitter: number of splits:1
+19/11/05 23:19:52 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local433318118_0001
+19/11/05 23:19:52 WARN conf.Configuration: file:/tmp/hadoop-hadoop/mapred/staging/hadoop433318118/.staging/job_local433318118_0001/job.xml:an attempt to override final parameter: yarn.nodemanager.local-dirs;  Ignoring.
+19/11/05 23:19:52 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+19/11/05 23:19:52 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+19/11/05 23:19:52 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+19/11/05 23:19:52 INFO Configuration.deprecation: mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+19/11/05 23:19:52 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+19/11/05 23:19:52 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/11/05 23:19:52 INFO output.DirectFileOutputCommitter: Direct Write: DISABLED
+19/11/05 23:19:52 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigOutputCommitter
+19/11/05 23:19:52 INFO mapred.LocalJobRunner: Waiting for map tasks
+19/11/05 23:19:52 INFO mapred.LocalJobRunner: Starting task: attempt_local433318118_0001_m_000000_0
+19/11/05 23:19:52 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+19/11/05 23:19:52 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/11/05 23:19:52 INFO output.DirectFileOutputCommitter: Direct Write: DISABLED
+19/11/05 23:19:52 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+19/11/05 23:19:52 INFO mapred.MapTask: Processing split: Number of splits :1
 Total Length = 49
 Input split[0]:
    Length = 49
@@ -84,294 +84,181 @@ Input split[0]:
 
 -----------------------
 
-1937 [LocalJobRunner Map Task Executor #0] INFO  org.apache.pig.builtin.PigStorage  - Using PigTextInputFormat
-19/11/05 05:39:51 INFO builtin.PigStorage: Using PigTextInputFormat
-1941 [LocalJobRunner Map Task Executor #0] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigRecordReader  - Current split being processed file:/home/hadoop/temp.txt:0+49
-19/11/05 05:39:51 INFO mapReduceLayer.PigRecordReader: Current split being processed file:/home/hadoop/temp.txt:0+49
-19/11/05 05:39:51 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
-19/11/05 05:39:51 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
-19/11/05 05:39:51 INFO output.DirectFileOutputCommitter: Direct Write: DISABLED
-19/11/05 05:39:51 INFO lzo.GPLNativeCodeLoader: Loaded native gpl library
-19/11/05 05:39:51 INFO lzo.LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev dd4c76892e34528885afc09320477261050f9ab5]
-1964 [LocalJobRunner Map Task Executor #0] INFO  org.apache.pig.impl.util.SpillableMemoryManager  - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
-19/11/05 05:39:51 INFO util.SpillableMemoryManager: Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
-1966 [LocalJobRunner Map Task Executor #0] INFO  org.apache.pig.data.SchemaTupleBackend  - Key [pig.schematuple] was not set... will not generate code.
-19/11/05 05:39:51 INFO data.SchemaTupleBackend: Key [pig.schematuple] was not set... will not generate code.
-19/11/05 05:39:51 INFO mapReduceLayer.PigMapOnly$Map: Aliases being processed per job phase (AliasName[line,offset]): M: records[1,10],records[-1,-1],hbase_result[6,15] C:  R: 
-19/11/05 05:39:51 INFO mapReduceLayer.MapReduceLauncher: HadoopJobId: job_local1883011412_0001
-19/11/05 05:39:51 INFO mapReduceLayer.MapReduceLauncher: Processing aliases hbase_result,records
-19/11/05 05:39:51 INFO mapReduceLayer.MapReduceLauncher: detailed locations: M: records[1,10],records[-1,-1],hbase_result[6,15] C:  R: 
-19/11/05 05:39:51 INFO mapReduceLayer.MapReduceLauncher: 0% complete
-19/11/05 05:39:51 INFO mapReduceLayer.MapReduceLauncher: Running jobs are [job_local1883011412_0001]
-first test:hbase (auth:SIMPLE)
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: hadoop login
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: hadoop login commit
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: using kerberos user:hbase/ip-172-31-26-188.ap-southeast-2.compute.internal@test.com
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: Using user: "hbase/ip-172-31-26-188.ap-southeast-2.compute.internal@test.com" with name hbase/ip-172-31-26-188.ap-southeast-2.compute.internal@test.com
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: User entry: "hbase/ip-172-31-26-188.ap-southeast-2.compute.internal@test.com"
-19/11/05 05:39:52 INFO security.UserGroupInformation: Login successful for user hbase/ip-172-31-26-188.ap-southeast-2.compute.internal@test.com using keytab file /etc/hbase.keytab
-current user second:hbase (auth:SIMPLE)
-login user second:hbase/ip-172-31-26-188.ap-southeast-2.compute.internal@test.com (auth:KERBEROS)
-if current user has kerberos:false
-if login user has kerberos:true
-if current user has kerberos after:false
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG impl.DfsClientConf: dfs.client.use.legacy.blockreader.local = false
-19/11/05 05:39:52 DEBUG impl.DfsClientConf: dfs.client.read.shortcircuit = false
-19/11/05 05:39:52 DEBUG impl.DfsClientConf: dfs.client.domain.socket.data.traffic = false
-19/11/05 05:39:52 DEBUG impl.DfsClientConf: dfs.domain.socket.path = 
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG hdfs.DFSClient: Sets dfs.client.block.write.replace-datanode-on-failure.min-replication to 0
-19/11/05 05:39:52 DEBUG retry.RetryUtils: multipleLinearRandomRetry = null
-19/11/05 05:39:52 DEBUG ipc.Server: rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker@e359fdb
-19/11/05 05:39:52 DEBUG ipc.Client: getting client out of cache: org.apache.hadoop.ipc.Client@35f11623
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG unix.DomainSocketWatcher: org.apache.hadoop.net.unix.DomainSocketWatcher$2@2c17dfdc: starting with interruptCheckPeriodMs = 60000
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG util.PerformanceAdvisory: Both short-circuit local reads and UNIX domain socket are disabled.
-19/11/05 05:39:52 DEBUG sasl.DataTransferSaslUtil: DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
-19/11/05 05:39:52 DEBUG logging.InternalLoggerFactory: Using SLF4J as the default logging framework
-19/11/05 05:39:52 DEBUG util.ResourceLeakDetector: -Dio.netty.leakDetectionLevel: simple
-19/11/05 05:39:52 DEBUG internal.PlatformDependent0: java.nio.Buffer.address: available
-19/11/05 05:39:52 DEBUG internal.PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
-19/11/05 05:39:52 DEBUG internal.PlatformDependent0: sun.misc.Unsafe.copyMemory: available
-19/11/05 05:39:52 DEBUG internal.PlatformDependent0: java.nio.Bits.unaligned: true
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: UID: 493
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: Java version: 8
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: -Dio.netty.noUnsafe: false
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: sun.misc.Unsafe: available
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: -Dio.netty.noJavassist: false
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: Javassist: available
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
-19/11/05 05:39:52 DEBUG internal.PlatformDependent: -Dio.netty.noPreferDirect: false
-19/11/05 05:39:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupIOstreams(BlockingRpcConnection.java:452)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedActionException as:hbase (auth:KERBEROS) cause:javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.hbase.ipc.BlockingRpcConnection.handleSaslConnectionFailure(BlockingRpcConnection.java:374)
-19/11/05 05:39:53 WARN ipc.BlockingRpcConnection: Exception encountered while connecting to the server : javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-19/11/05 05:39:53 ERROR ipc.BlockingRpcConnection: SASL authentication failed. The most likely cause is missing or invalid credentials. Consider 'kinit'.
-javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-	at com.sun.security.sasl.gsskerb.GssKrb5Client.evaluateChallenge(GssKrb5Client.java:211)
-	at org.apache.hadoop.hbase.security.AbstractHBaseSaslRpcClient.getInitialResponse(AbstractHBaseSaslRpcClient.java:130)
-	at org.apache.hadoop.hbase.security.HBaseSaslRpcClient.saslConnect(HBaseSaslRpcClient.java:81)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupSaslConnection(BlockingRpcConnection.java:353)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.access$600(BlockingRpcConnection.java:85)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$2.run(BlockingRpcConnection.java:455)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$2.run(BlockingRpcConnection.java:452)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:422)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1844)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupIOstreams(BlockingRpcConnection.java:452)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.writeRequest(BlockingRpcConnection.java:540)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.tracedWriteRequest(BlockingRpcConnection.java:520)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.access$200(BlockingRpcConnection.java:85)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$4.run(BlockingRpcConnection.java:724)
-	at org.apache.hadoop.hbase.ipc.HBaseRpcControllerImpl.notifyOnCancel(HBaseRpcControllerImpl.java:240)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.sendRequest(BlockingRpcConnection.java:699)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.callMethod(AbstractRpcClient.java:420)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.callBlockingMethod(AbstractRpcClient.java:327)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.access$200(AbstractRpcClient.java:94)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient$BlockingRpcChannelImplementation.callBlockingMethod(AbstractRpcClient.java:571)
-	at org.apache.hadoop.hbase.protobuf.generated.ClientProtos$ClientService$BlockingStub.scan(ClientProtos.java:37059)
-	at org.apache.hadoop.hbase.client.ScannerCallable.openScanner(ScannerCallable.java:405)
-	at org.apache.hadoop.hbase.client.ScannerCallable.call(ScannerCallable.java:274)
-	at org.apache.hadoop.hbase.client.ScannerCallable.call(ScannerCallable.java:62)
-	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithoutRetries(RpcRetryingCaller.java:219)
-	at org.apache.hadoop.hbase.client.ScannerCallableWithReplicas$RetryingRPC.call(ScannerCallableWithReplicas.java:388)
-	at org.apache.hadoop.hbase.client.ScannerCallableWithReplicas$RetryingRPC.call(ScannerCallableWithReplicas.java:362)
-	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:142)
-	at org.apache.hadoop.hbase.client.ResultBoundedCompletionService$QueueingFuture.run(ResultBoundedCompletionService.java:80)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)
-	at sun.security.jgss.krb5.Krb5InitCredential.getInstance(Krb5InitCredential.java:147)
-	at sun.security.jgss.krb5.Krb5MechFactory.getCredentialElement(Krb5MechFactory.java:122)
-	at sun.security.jgss.krb5.Krb5MechFactory.getMechanismContext(Krb5MechFactory.java:187)
-	at sun.security.jgss.GSSManagerImpl.getMechanismContext(GSSManagerImpl.java:224)
-	at sun.security.jgss.GSSContextImpl.initSecContext(GSSContextImpl.java:212)
-	at sun.security.jgss.GSSContextImpl.initSecContext(GSSContextImpl.java:179)
-	at com.sun.security.sasl.gsskerb.GssKrb5Client.evaluateChallenge(GssKrb5Client.java:192)
-	... 32 more
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupIOstreams(BlockingRpcConnection.java:452)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedActionException as:hbase (auth:KERBEROS) cause:javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.hbase.ipc.BlockingRpcConnection.handleSaslConnectionFailure(BlockingRpcConnection.java:374)
-19/11/05 05:39:55 WARN ipc.BlockingRpcConnection: Exception encountered while connecting to the server : javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-19/11/05 05:39:55 ERROR ipc.BlockingRpcConnection: SASL authentication failed. The most likely cause is missing or invalid credentials. Consider 'kinit'.
-javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-	at com.sun.security.sasl.gsskerb.GssKrb5Client.evaluateChallenge(GssKrb5Client.java:211)
-	at org.apache.hadoop.hbase.security.AbstractHBaseSaslRpcClient.getInitialResponse(AbstractHBaseSaslRpcClient.java:130)
-	at org.apache.hadoop.hbase.security.HBaseSaslRpcClient.saslConnect(HBaseSaslRpcClient.java:81)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupSaslConnection(BlockingRpcConnection.java:353)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.access$600(BlockingRpcConnection.java:85)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$2.run(BlockingRpcConnection.java:455)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$2.run(BlockingRpcConnection.java:452)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:422)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1844)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupIOstreams(BlockingRpcConnection.java:452)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.writeRequest(BlockingRpcConnection.java:540)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.tracedWriteRequest(BlockingRpcConnection.java:520)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.access$200(BlockingRpcConnection.java:85)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$4.run(BlockingRpcConnection.java:724)
-	at org.apache.hadoop.hbase.ipc.HBaseRpcControllerImpl.notifyOnCancel(HBaseRpcControllerImpl.java:240)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.sendRequest(BlockingRpcConnection.java:699)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.callMethod(AbstractRpcClient.java:420)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.callBlockingMethod(AbstractRpcClient.java:327)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.access$200(AbstractRpcClient.java:94)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient$BlockingRpcChannelImplementation.callBlockingMethod(AbstractRpcClient.java:571)
-	at org.apache.hadoop.hbase.protobuf.generated.ClientProtos$ClientService$BlockingStub.scan(ClientProtos.java:37059)
-	at org.apache.hadoop.hbase.client.ScannerCallable.openScanner(ScannerCallable.java:405)
-	at org.apache.hadoop.hbase.client.ScannerCallable.call(ScannerCallable.java:274)
-	at org.apache.hadoop.hbase.client.ScannerCallable.call(ScannerCallable.java:62)
-	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithoutRetries(RpcRetryingCaller.java:219)
-	at org.apache.hadoop.hbase.client.ScannerCallableWithReplicas$RetryingRPC.call(ScannerCallableWithReplicas.java:388)
-	at org.apache.hadoop.hbase.client.ScannerCallableWithReplicas$RetryingRPC.call(ScannerCallableWithReplicas.java:362)
-	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:142)
-	at org.apache.hadoop.hbase.client.ResultBoundedCompletionService$QueueingFuture.run(ResultBoundedCompletionService.java:80)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)
-	at sun.security.jgss.krb5.Krb5InitCredential.getInstance(Krb5InitCredential.java:147)
-	at sun.security.jgss.krb5.Krb5MechFactory.getCredentialElement(Krb5MechFactory.java:122)
-	at sun.security.jgss.krb5.Krb5MechFactory.getMechanismContext(Krb5MechFactory.java:187)
-	at sun.security.jgss.GSSManagerImpl.getMechanismContext(GSSManagerImpl.java:224)
-	at sun.security.jgss.GSSContextImpl.initSecContext(GSSContextImpl.java:212)
-	at sun.security.jgss.GSSContextImpl.initSecContext(GSSContextImpl.java:179)
-	at com.sun.security.sasl.gsskerb.GssKrb5Client.evaluateChallenge(GssKrb5Client.java:192)
-	... 32 more
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:55 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:56 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupIOstreams(BlockingRpcConnection.java:452)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedActionException as:hbase (auth:KERBEROS) cause:javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.hbase.ipc.BlockingRpcConnection.handleSaslConnectionFailure(BlockingRpcConnection.java:374)
-19/11/05 05:39:57 WARN ipc.BlockingRpcConnection: Exception encountered while connecting to the server : javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-19/11/05 05:39:57 ERROR ipc.BlockingRpcConnection: SASL authentication failed. The most likely cause is missing or invalid credentials. Consider 'kinit'.
-javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)]
-	at com.sun.security.sasl.gsskerb.GssKrb5Client.evaluateChallenge(GssKrb5Client.java:211)
-	at org.apache.hadoop.hbase.security.AbstractHBaseSaslRpcClient.getInitialResponse(AbstractHBaseSaslRpcClient.java:130)
-	at org.apache.hadoop.hbase.security.HBaseSaslRpcClient.saslConnect(HBaseSaslRpcClient.java:81)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupSaslConnection(BlockingRpcConnection.java:353)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.access$600(BlockingRpcConnection.java:85)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$2.run(BlockingRpcConnection.java:455)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$2.run(BlockingRpcConnection.java:452)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:422)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1844)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupIOstreams(BlockingRpcConnection.java:452)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.writeRequest(BlockingRpcConnection.java:540)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.tracedWriteRequest(BlockingRpcConnection.java:520)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.access$200(BlockingRpcConnection.java:85)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection$4.run(BlockingRpcConnection.java:724)
-	at org.apache.hadoop.hbase.ipc.HBaseRpcControllerImpl.notifyOnCancel(HBaseRpcControllerImpl.java:240)
-	at org.apache.hadoop.hbase.ipc.BlockingRpcConnection.sendRequest(BlockingRpcConnection.java:699)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.callMethod(AbstractRpcClient.java:420)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.callBlockingMethod(AbstractRpcClient.java:327)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.access$200(AbstractRpcClient.java:94)
-	at org.apache.hadoop.hbase.ipc.AbstractRpcClient$BlockingRpcChannelImplementation.callBlockingMethod(AbstractRpcClient.java:571)
-	at org.apache.hadoop.hbase.protobuf.generated.ClientProtos$ClientService$BlockingStub.scan(ClientProtos.java:37059)
-	at org.apache.hadoop.hbase.client.ScannerCallable.openScanner(ScannerCallable.java:405)
-	at org.apache.hadoop.hbase.client.ScannerCallable.call(ScannerCallable.java:274)
-	at org.apache.hadoop.hbase.client.ScannerCallable.call(ScannerCallable.java:62)
-	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithoutRetries(RpcRetryingCaller.java:219)
-	at org.apache.hadoop.hbase.client.ScannerCallableWithReplicas$RetryingRPC.call(ScannerCallableWithReplicas.java:388)
-	at org.apache.hadoop.hbase.client.ScannerCallableWithReplicas$RetryingRPC.call(ScannerCallableWithReplicas.java:362)
-	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:142)
-	at org.apache.hadoop.hbase.client.ResultBoundedCompletionService$QueueingFuture.run(ResultBoundedCompletionService.java:80)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt)
-	at sun.security.jgss.krb5.Krb5InitCredential.getInstance(Krb5InitCredential.java:147)
-	at sun.security.jgss.krb5.Krb5MechFactory.getCredentialElement(Krb5MechFactory.java:122)
-	at sun.security.jgss.krb5.Krb5MechFactory.getMechanismContext(Krb5MechFactory.java:187)
-	at sun.security.jgss.GSSManagerImpl.getMechanismContext(GSSManagerImpl.java:224)
-	at sun.security.jgss.GSSContextImpl.initSecContext(GSSContextImpl.java:212)
-	at sun.security.jgss.GSSContextImpl.initSecContext(GSSContextImpl.java:179)
-	at com.sun.security.sasl.gsskerb.GssKrb5Client.evaluateChallenge(GssKrb5Client.java:192)
-	... 32 more
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:57 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:58 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:59 INFO mapReduceLayer.MapReduceLauncher: Received kill signal
-19/11/05 05:39:59 INFO mapReduceLayer.MapReduceLauncher: Job job_local1883011412_0001 killed
-2019-11-05 05:39:59 Job job_local1883011412_0001 killed
-19/11/05 05:39:59 INFO pigudf.GetHbaseRow: null
-19/11/05 05:39:59 INFO pigudf.GetHbaseRow: errror happpeeeeeeeeing!!!!!!!!!!!!!!!
-19/11/05 05:39:59 WARN mapred.LocalJobRunner: job_local1883011412_0001
-java.lang.InterruptedException
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
-	at java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
-	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:476)
-	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:549)
-19/11/05 05:39:59 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:339)
-19/11/05 05:39:59 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:59 DEBUG security.UserGroupInformation: PrivilegedAction as:hbase (auth:KERBEROS) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-19/11/05 05:39:59 DEBUG ipc.Client: stopping client from cache: org.apache.hadoop.ipc.Client@35f11623
-19/11/05 05:39:59 DEBUG ipc.Client: removing client from cache: org.apache.hadoop.ipc.Client@35f11623
-19/11/05 05:39:59 DEBUG ipc.Client: stopping actual client because no more references remain: org.apache.hadoop.ipc.Client@35f11623
-19/11/05 05:39:59 DEBUG ipc.Client: Stopping client
-19/11/05 05:39:59 DEBUG util.ShutdownHookManager: ShutdownHookManger complete shutdown.
+2036 [LocalJobRunner Map Task Executor #0] INFO  org.apache.pig.builtin.PigStorage  - Using PigTextInputFormat
+19/11/05 23:19:52 INFO builtin.PigStorage: Using PigTextInputFormat
+2039 [LocalJobRunner Map Task Executor #0] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigRecordReader  - Current split being processed file:/home/hadoop/temp.txt:0+49
+19/11/05 23:19:52 INFO mapReduceLayer.PigRecordReader: Current split being processed file:/home/hadoop/temp.txt:0+49
+19/11/05 23:19:52 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+19/11/05 23:19:52 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/11/05 23:19:52 INFO output.DirectFileOutputCommitter: Direct Write: DISABLED
+19/11/05 23:19:52 INFO lzo.GPLNativeCodeLoader: Loaded native gpl library
+19/11/05 23:19:52 INFO lzo.LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev dd4c76892e34528885afc09320477261050f9ab5]
+2059 [LocalJobRunner Map Task Executor #0] INFO  org.apache.pig.impl.util.SpillableMemoryManager  - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+19/11/05 23:19:52 INFO util.SpillableMemoryManager: Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+2060 [LocalJobRunner Map Task Executor #0] INFO  org.apache.pig.data.SchemaTupleBackend  - Key [pig.schematuple] was not set... will not generate code.
+19/11/05 23:19:52 INFO data.SchemaTupleBackend: Key [pig.schematuple] was not set... will not generate code.
+19/11/05 23:19:52 INFO mapReduceLayer.PigMapOnly$Map: Aliases being processed per job phase (AliasName[line,offset]): M: records[1,10],records[-1,-1],hbase_result[6,15] C:  R: 
+19/11/05 23:19:52 INFO mapReduceLayer.MapReduceLauncher: HadoopJobId: job_local433318118_0001
+19/11/05 23:19:52 INFO mapReduceLayer.MapReduceLauncher: Processing aliases hbase_result,records
+19/11/05 23:19:52 INFO mapReduceLayer.MapReduceLauncher: detailed locations: M: records[1,10],records[-1,-1],hbase_result[6,15] C:  R: 
+19/11/05 23:19:52 INFO mapReduceLayer.MapReduceLauncher: 0% complete
+19/11/05 23:19:52 INFO mapReduceLayer.MapReduceLauncher: Running jobs are [job_local433318118_0001]
+19/11/05 23:19:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:52 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG impl.DfsClientConf: dfs.client.use.legacy.blockreader.local = false
+19/11/05 23:19:53 DEBUG impl.DfsClientConf: dfs.client.read.shortcircuit = false
+19/11/05 23:19:53 DEBUG impl.DfsClientConf: dfs.client.domain.socket.data.traffic = false
+19/11/05 23:19:53 DEBUG impl.DfsClientConf: dfs.domain.socket.path = 
+19/11/05 23:19:53 DEBUG hdfs.DFSClient: Sets dfs.client.block.write.replace-datanode-on-failure.min-replication to 0
+19/11/05 23:19:53 DEBUG retry.RetryUtils: multipleLinearRandomRetry = null
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG ipc.Server: rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker@1362d276
+19/11/05 23:19:53 DEBUG ipc.Client: getting client out of cache: org.apache.hadoop.ipc.Client@135c89c9
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG unix.DomainSocketWatcher: org.apache.hadoop.net.unix.DomainSocketWatcher$2@3d016488: starting with interruptCheckPeriodMs = 60000
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG util.PerformanceAdvisory: Both short-circuit local reads and UNIX domain socket are disabled.
+19/11/05 23:19:53 DEBUG sasl.DataTransferSaslUtil: DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+19/11/05 23:19:53 DEBUG logging.InternalLoggerFactory: Using SLF4J as the default logging framework
+19/11/05 23:19:53 DEBUG util.ResourceLeakDetector: -Dio.netty.leakDetectionLevel: simple
+19/11/05 23:19:53 DEBUG internal.PlatformDependent0: java.nio.Buffer.address: available
+19/11/05 23:19:53 DEBUG internal.PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+19/11/05 23:19:53 DEBUG internal.PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+19/11/05 23:19:53 DEBUG internal.PlatformDependent0: java.nio.Bits.unaligned: true
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: UID: 498
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: Java version: 8
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: -Dio.netty.noUnsafe: false
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: sun.misc.Unsafe: available
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: -Dio.netty.noJavassist: false
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: Javassist: available
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+19/11/05 23:19:53 DEBUG internal.PlatformDependent: -Dio.netty.noPreferDirect: false
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.hbase.ipc.BlockingRpcConnection.setupIOstreams(BlockingRpcConnection.java:452)
+19/11/05 23:19:53 DEBUG security.SaslInputStream: Actual length is 578
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:53 DEBUG security.SaslInputStream: Actual length is 122
+19/11/05 23:19:53 DEBUG security.SaslInputStream: Actual length is 122
+19/11/05 23:19:53 DEBUG security.SaslInputStream: Actual length is 122
+19/11/05 23:19:53 DEBUG security.SaslInputStream: Actual length is 124
+19/11/05 23:19:53 DEBUG security.SaslInputStream: Actual length is 124
+19/11/05 23:19:53 DEBUG security.SaslInputStream: Actual length is 122
+19/11/05 23:19:53 INFO mapred.LocalJobRunner: 
+19/11/05 23:19:53 INFO mapred.Task: Task:attempt_local433318118_0001_m_000000_0 is done. And is in the process of committing
+19/11/05 23:19:53 INFO mapred.LocalJobRunner: 
+19/11/05 23:19:53 INFO mapred.Task: Task attempt_local433318118_0001_m_000000_0 is allowed to commit now
+19/11/05 23:19:53 INFO output.FileOutputCommitter: Saved output of task 'attempt_local433318118_0001_m_000000_0' to file:/tmp/temp-55608675/tmp395672203/_temporary/0/task_local433318118_0001_m_000000
+19/11/05 23:19:53 INFO mapred.LocalJobRunner: map
+19/11/05 23:19:53 INFO mapred.Task: Task 'attempt_local433318118_0001_m_000000_0' done.
+19/11/05 23:19:53 INFO mapred.Task: Final Counters for attempt_local433318118_0001_m_000000_0: Counters: 20
+	File System Counters
+		FILE: Number of bytes read=456
+		FILE: Number of bytes written=421462
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=0
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Input split bytes=353
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=75
+		Total committed heap usage (bytes)=460324864
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=0
+19/11/05 23:19:53 INFO mapred.LocalJobRunner: Finishing task: attempt_local433318118_0001_m_000000_0
+19/11/05 23:19:53 INFO mapred.LocalJobRunner: map task executor complete.
+19/11/05 23:19:53 DEBUG output.FileOutputCommitter: Merging data from DeprecatedRawLocalFileStatus{path=file:/tmp/temp-55608675/tmp395672203/_temporary/0/task_local433318118_0001_m_000000; isDirectory=true; modification_time=1572995992000; access_time=1572995992641; owner=; group=; permission=rwxrwxrwx; isSymlink=false} to file:/tmp/temp-55608675/tmp395672203
+19/11/05 23:19:53 DEBUG output.FileOutputCommitter: Merging data from DeprecatedRawLocalFileStatus{path=file:/tmp/temp-55608675/tmp395672203/_temporary/0/task_local433318118_0001_m_000000/part-m-00000; isDirectory=false; length=136; replication=1; blocksize=33554432; modification_time=1572995993000; access_time=1572995992641; owner=; group=; permission=rw-rw-rw-; isSymlink=false} to file:/tmp/temp-55608675/tmp395672203/part-m-00000
+19/11/05 23:19:53 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:339)
+19/11/05 23:19:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+19/11/05 23:19:54 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Picked org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider
+19/11/05 23:19:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskReports(Job.java:536)
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+19/11/05 23:19:54 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Picked org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider
+19/11/05 23:19:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskReports(Job.java:536)
+19/11/05 23:19:54 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+19/11/05 23:19:54 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+19/11/05 23:19:54 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Picked org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider
+19/11/05 23:19:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getCounters(Job.java:809)
+19/11/05 23:19:54 INFO mapReduceLayer.MapReduceLauncher: 100% complete
+19/11/05 23:19:54 INFO mapreduce.SimplePigStats: Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+2.8.5-amzn-4	0.17.0	hadoop	2019-11-05 23:19:52	2019-11-05 23:19:54	UNKNOWN
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTime	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_local433318118_0001	1	0	n/a	n/a	n/a	n/a	0	0	0	0	hbase_result,records	MAP_ONLY	file:/tmp/temp-55608675/tmp395672203,
+
+Input(s):
+Successfully read 6 records from: "/home/hadoop/temp.txt"
+
+Output(s):
+Successfully stored 6 records in: "file:/tmp/temp-55608675/tmp395672203"
+
+Counters:
+Total records written : 6
+Total bytes written : 0
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_local433318118_0001
+
+
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+19/11/05 23:19:54 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Picked org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider
+19/11/05 23:19:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskReports(Job.java:536)
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+19/11/05 23:19:54 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Picked org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider
+19/11/05 23:19:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskReports(Job.java:536)
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+19/11/05 23:19:54 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+19/11/05 23:19:54 DEBUG mapreduce.Cluster: Picked org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider
+19/11/05 23:19:54 DEBUG security.UserGroupInformation: PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getCounters(Job.java:809)
+19/11/05 23:19:54 INFO mapReduceLayer.MapReduceLauncher: Success!
+19/11/05 23:19:54 WARN data.SchemaTupleBackend: SchemaTupleBackend has already been initialized
+19/11/05 23:19:54 DEBUG input.FileInputFormat: Time taken to get FileStatuses: 9
+19/11/05 23:19:54 INFO input.FileInputFormat: Total input files to process : 1
+19/11/05 23:19:54 INFO util.MapRedUtil: Total input paths to process : 1
+19/11/05 23:19:54 DEBUG input.FileInputFormat: Total # of splits generated by getSplits: 1, TimeTaken: 9
+(1990,90finish)
+(1990,90finish)
+(1991,91finish)
+(1992,92progress)
+(1992,92progress)
+(1990,90finish)
+19/11/05 23:19:54 INFO pig.Main: Pig script completed in 3 seconds and 977 milliseconds (3977 ms)
+19/11/05 23:19:54 DEBUG ipc.Client: stopping client from cache: org.apache.hadoop.ipc.Client@135c89c9
+19/11/05 23:19:54 DEBUG ipc.Client: removing client from cache: org.apache.hadoop.ipc.Client@135c89c9
+19/11/05 23:19:54 DEBUG ipc.Client: stopping actual client because no more references remain: org.apache.hadoop.ipc.Client@135c89c9
+19/11/05 23:19:54 DEBUG ipc.Client: Stopping client
+19/11/05 23:19:54 DEBUG util.ShutdownHookManager: ShutdownHookManger complete shutdown.

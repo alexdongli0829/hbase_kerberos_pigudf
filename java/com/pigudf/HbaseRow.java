@@ -45,7 +45,12 @@ public class HbaseRow {
         	configuration.set("hbase.rpc.protection ", "privacy");
         	configuration.set("hbase.master.kerberos.principal", "hbase/_HOST@test.com");
         	configuration.set("hbase.regionserver.kerberos.principal", "hbase/_HOST@test.com");
-		//Connection connection = ConnectionFactory.createConnection(HBaseConfiguration.create(configuration));
+		//check the user info
+		System.out.println("current user second:"+UserGroupInformation.getCurrentUser());
+                System.out.println("login user second:"+UserGroupInformation.getLoginUser());
+                System.out.println("if current user has kerberos:"+UserGroupInformation.getCurrentUser().hasKerberosCredentials());
+                System.out.println("if login user has kerberos:"+UserGroupInformation.getLoginUser().hasKerberosCredentials());
+
 		Connection connection = ConnectionFactory.createConnection(configuration);
 		return connection;
 	}
