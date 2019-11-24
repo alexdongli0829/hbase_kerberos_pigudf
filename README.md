@@ -4,8 +4,8 @@ Used for a kerberos test from java client directly -> HbaseTestNew.java
 
 
 
-javac -cp .:/usr/lib/hbaslib/\*:/usr/lib/hbase/e/hbase-client-1.4.9.jar:$(hadoop classpath) com/pigudf/HbaseTestNew.java
-java -cp .:/usr/lib/hbaslib/\*:/usr/lib/hbase/e/hbase-client-1.4.9.jar:$(hadoop classpath) com.pigudf.HbaseTestNew
+javac -cp .:/usr/lib/hbase/lib/\*:/usr/lib/hbase/e/hbase-client-1.4.9.jar:$(hadoop classpath) com/pigudf/HbaseTestNew.java
+java -cp .:/usr/lib/hbase/lib/\*:/usr/lib/hbase/e/hbase-client-1.4.9.jar:$(hadoop classpath) com.pigudf.HbaseTestNew
 
 one pig very simple udf test -> GetClassification.java
 
